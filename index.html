@@ -7,19 +7,42 @@
 	<meta name="keywords" content="Lunara, ha ha ha, laugh" />
     <meta name="description" content="Lunara, ha ha ha, laugh" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="game_css.css">
 </head>
-<div class="container">
-<body>
-    <div class="col-lg-4 col-6 px-0"><img class="img-thumbnail img-fluid" src="lunara.png" alt=""></div>
-    <div class="track">
-      <audio controls>
-        <source src="Lunara_Laugh09.mp3" />
-      </audio>
-    </div>
-    <footer>
-            <a href="https://www.deviantart.com/oneeyedsheep/art/Lunara-Heroes-of-the-Storm-586148557" target="_blanc">Original art</a>
-        </footer>
 
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Game of paired images</h1>
+            <p>Find pairs of images to win the game</p>
+            <button id='restart_button' type='button' class='btn btn-primary btn-lg' name='button'>Restart!</button>
+        <table align="center">
+            <tr>
+                <td><img id="img_1" src="game_images/empty_green.png" width="100" height="100"></td>
+                <td><img id="img_2" src="game_images/empty_green.png" width="100" height="100"></td>
+                <td><img id="img_3" src="game_images/empty_green.png" width="100" height="100"></td>
+                <td><img id="img_4" src="game_images/empty_green.png" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td><img id="img_5" src="game_images/empty_green.png" width="100" height="100"></td>
+                <td><img id="img_6" src="game_images/empty_green.png" width="100" height="100"></td>
+                <td><img id="img_7" src="game_images/empty_green.png" width="100" height="100"></td>
+                <td><img id="img_8" src="game_images/empty_green.png" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td><img id="img_9" src="game_images/empty_green.png" width="100" height="100"></td>
+                <td><img id="img_10" src="game_images/empty_green.png" width="100" height="100"></td>
+                <td><img id="img_11" src="game_images/empty_green.png" width="100" height="100"></td>
+                <td><img id="img_12" src="game_images/empty_green.png" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td><img id="img_13" src="game_images/empty_green.png" width="100" height="100"></td>
+                <td><img id="img_14" src="game_images/empty_green.png" width="100" height="100"></td>
+                <td><img id="img_15" src="game_images/empty_green.png" width="100" height="100"></td>
+                <td><img id="img_16" src="game_images/empty_green.png" width="100" height="100"></td>
+            </tr>
+        </table>
+    <script src="game_script.js"></script>
+    </div>
 </body>
 </html>
-</div>
