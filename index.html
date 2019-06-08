@@ -2,10 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>MY TITLE</title>
+	<title>Game of memory</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Lunara, ha ha ha, laugh" />
-    <meta name="description" content="Lunara, ha ha ha, laugh" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="game_css.css">
 </head>
@@ -42,7 +40,13 @@
                 <td><img id="img_16" src="game_images/empty_green.png" width="100" height="100"></td>
             </tr>
         </table>
-    <script src="game_script.js"></script>
+        <div id="game_won">
+            <h1 style="display: inline">Bravo ! You won the game in </h1><h1 style="display: inline" id="number_of_turns">0</h1><h1 style="display: inline"> turns!</h1>
+        </div>
+
+        <script src="game_script.js"></script>
+    
+        </div>
     </div>
 </body>
 </html>
