@@ -119,4 +119,4 @@ for (var i = 0; i < all_cells.length; i++) {
 }
 
 
-clear_board();
+window.onload = clear_board();
