@@ -1,6 +1,6 @@
 var images = [];
 var eight_random_couples_of_images = [];
-var all_cells = document.querySelectorAll('img');
+var all_cells = document.getElementsByClassName('game_cell_image');
 var image_per_cell_dictionary = {};
 var current_turn = 1;
 var current_cell_pair = [];
@@ -87,6 +87,7 @@ function check_for_match() {
 }
 
 function cell_clicked() {
+    console.log("lol test");
     if (this.src.includes("game_images/empty_green.png")) {
 
         if(current_turn%2 == 1){
