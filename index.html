@@ -44,10 +44,10 @@
         <style>
             .jumbotron { 
                 background-image: url("./profile_images/explore.png");
-                height: 500px;
+                background-size: 100%;
                 background-position: center;
                 background-repeat: no-repeat;
-                color: #ffffff;
+                height: 1024px;
             }
             
             .glyphicon.glyphicon-star.filled {
@@ -64,8 +64,8 @@
             .carousel-indicators li.active {
                 background-color: #f4511e;
             }
-            .carousel.slide.text-center {
-                height: 500px;
+            .carousel.slide {
+                height: 290px;
             }
 
             .navbar {
@@ -115,10 +115,10 @@
                           </div>
                           <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav navbar-right">
-                              <li><a href="#profile">profile</a></li>
-                              <li><a href="#experiences">experiences</a></li>
-                              <li><a href="#abilities">abilities</a></li>
-                              <li><a href="#projects">Projects</a></li>
+                              <li><a href="#profile">PROFILE</a></li>
+                              <li><a href="#experiences">EXPERIENCES</a></li>
+                              <li><a href="#abilities">ABILITIES</a></li>
+                              <li><a href="#game_of_memory">WASTE 2 MINUTES</a></li>
                               <li><a href="#contact">CONTACT</a></li>
                             </ul>
                           </div>
@@ -132,8 +132,6 @@
             
         <div class="background-white">
             <div id="profile" class="container">
-            <hr />
-            
                 <div class="row">
         	        <div class="col-md-4">
         	    	    <h3>About me</h3>
@@ -142,25 +140,10 @@
         	        <div class="col-md-4 text-center">
         	    	    <img src="./profile_images//mikhail_ilin_photo_1.png" alt="My photo : )" width="300" height="300" />
         	        </div>
-        	        <div class="col-md-4">
-        	    	    <h3>Details</h3>
-        	    	    <p>
-        	    		    <strong>Name:</strong><br />
-        	    		    Mikhail Ilin<br />
-        	    		    <strong>Age:</strong><br />
-        	    		    32 years<br />
-        	    		    <strong>Location:</strong><br />
-                            Paris area, France
-                            </br>
-                            <a href="https://www.linkedin.com/in/mikhail-ilin-fr/"><img alt="linkedin" src="./profile_images//LI-Logo.png" width="102" height="25"></a>
-                            </br>
-                            <a href="https://github.com/milin-fr"><img alt="github" src="./profile_images//GitHub_Logo.png" width="60" height="25"></a>
-                        </p>
-        	        </div>
                 </div>
         	</div>	
         </div>	
-
+        <hr />
         <div id="experiences" class="container">
                 <h2>Experiences</h2>
                 <p class="lead">
@@ -168,114 +151,169 @@
                 </p>
                 <hr />
             
-                <h3>Educations</h3>
-            
+                <h3>Career at Blizzard Entertainment</h3>
+                
                 <div class="experiences">
-                    <div class="experience row">
-                        <div class="col-md-4">
-                            <h4>school PH</h4>
-                            <p class="experience-period">
-                                start date PH				- 
-                                end date PH			</p>
-                        </div>
-                        <div class="col-md-8">
-                            <p>
-                                <strong>school name PH</strong>
-                                <span class="hidden-phone">
-                                Details PH (not for phones)    
-                                </span>
-                                <span class="experience-details">
-                                    <span class="location">
-                                        <span class="glyphicon glyphicon-map-marker"></span>
-                                        Location PH
-                                    </span>
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            
-                <hr />
-            
-                <h3>Careers</h3>
-            
-                <div class="experiences">
-                    <div class="experience row">
-                        <div class="col-md-4">
-                            <h4>Company Name PH</h4>
-                            <p class="experience-period">
-                                Start date PH				- 
-                                end date PH
-                            </p>
-                        </div>
-                        <div class="col-md-8">
-                            <p>
-                                <strong>Job Title PH</strong>
-                                <span class="hidden-phone">
-                                Details PH (not for phones)
-                                </span>
-                                <span class="experience-details">
-                                    <span class="location">
-                                        <span class="glyphicon glyphicon-map-marker"></span>
-                                        Location PH
-                                    </span>
-                                    <span class="seperator">|</span>
-                                    <span class="link">
-                                        <span class="glyphicon glyphicon-link"></span>
-                                        <a href="http://CompanyWebSitePH.com" target="_blank">http://CompanyWebSitePH.com</a>
-                                    </span>
-                                </span>
-                            </p>
-                        </div>
-                    </div>
+                    <span class="experience-details">
+                        <span class="location">
+                            <span class="glyphicon glyphicon-map-marker"></span>
+                            Paris Area, France
+                            </span>
+                            <span class="seperator">|</span>
+                                <span class="link">
+                                <span class="glyphicon glyphicon-link"></span>
+                                <a href="https://www.blizzard.com/" target="_blank">https://www.blizzard.com/</a>
+                            </span>
+                        </span>
+                        <hr />
                 
             </div>
             <!-- Carousel starts -->
-            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
               <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
               </ol>
           
               <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                        <div class="experience row">
-                            <div class="col-md-4">
-                                <h4>Company Name PH</h4>
-                                <p class="experience-period">
-                                    Start date PH				- 
-                                    end date PH
-                                </p>
-                            </div>
-                            <div class="col-md-8">
-                                <p>
-                                    <strong>Job Title PH</strong>
-                                    <span class="hidden-phone">
-                                    Details PH (not for phones)
-                                    </span>
-                                    <span class="experience-details">
-                                        <span class="location">
-                                            <span class="glyphicon glyphicon-map-marker"></span>
-                                            Location PH
-                                        </span>
-                                        <span class="seperator">|</span>
-                                        <span class="link">
-                                            <span class="glyphicon glyphicon-link"></span>
-                                            <a href="http://CompanyWebSitePH.com" target="_blank">http://CompanyWebSitePH.com</a>
-                                        </span>
-                                    </span>
-                                </p>
-                            </div>
+                    <div class="experience row">
+                        <div class="col-md-4">
+                            <h4>Social Media Manager, CS</h4>
+                            <p class="experience-period">
+                                June 2018				- 
+                                PRESENT
+                            </p>
                         </div>
+                        <div class="col-md-8">
+                            <p>
+                                • Delivered one-to-many communications via forum and twitter,
+                                educating players on self-help options, solutions to common issues and
+                                use of external CS knowledge base.<br />
+                                • Drafted and translated numerous external knowledge base articles,
+                                breaking news, templates and messages.<br />
+                                • Maintained internal documentation up-to-date following the evolution
+                                of processes and tools.<br />
+                                • Developed a desktop app to track productivity of my team and I
+                                in convenient way.<br />
+                                • Developed a desktop app to generate template messages for urgent player facing communication (supporting 8 languages).<br />
+                                • Developed a desktop app based on existing API to suggest support articles depending on players issue description (supporting 8 languages).<br />
+                                • Developed a desktop app based on JIRA API to extract information from thousands JIRA issues and compile it to Excel file in ordered way.<br />
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
-                  <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
+                        <div class="experience row">
+                                <div class="col-md-4">
+                                    <h4>Test Analyst (Temporary Assignment)</h4>
+                                    <p class="experience-period">
+                                        October 2017				- 
+                                        June 2018
+                                    </p>
+                                </div>
+                                <div class="col-md-8">
+                                    <p>
+                                        • Created detailed test plans for several major features of World of
+                                        Warcraft: Battle for Azeroth expansion.<br />
+                                        • Supervised the progress of testing for above features.<br />
+                                        • Created training material for external QA team, that helped us testing
+                                        Battle for Azeroth expansion.<br />
+                                        • Delivered several major parts of above training.<br />
+                                        • Streamlined and documented QA processes for European team.<br />
+                                        • Performed localization tests of Blizzard games, as well as localization
+                                        and functionality test of Blizzard web pages and services.<br />
+                                    </p>
+                                </div>
+                            </div>
                 </div>
                 <div class="item">
-                  <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
+                        <div class="experience row">
+                                <div class="col-md-4">
+                                    <h4>Social Media Manager, CS</h4>
+                                    <p class="experience-period">
+                                        November 2011				- 
+                                        October 2017
+                                    </p>
+                                </div>
+                                <div class="col-md-8">
+                                    <p>
+                                        • Delivered reactive and proactive communication on CS related topics via
+                                        forum, twitter, launcher breaking news and web-site breaking news.<br />
+                                        • Translated hundreds of external support articles from English to Russian
+                                        language.<br />
+                                        • Volunteered for night shifts to be part of strike team during world-wide
+                                        game and expansion launches.<br />
+                                        • Streamlined and documented all processes related to the scope of work of
+                                        my team in Europe.<br />
+                                        • Implemented and documented the Google Analytics Tracking process for
+                                        SC knowledge base and forum posts in European region.<br />
+                                    </p>
+                                </div>
+                            </div>
+                </div>
+                <div class="item">
+                        <div class="experience row">
+                                <div class="col-md-4">
+                                    <h4>Technical Customer Support</h4>
+                                    <p class="experience-period">
+                                        February 2010				- 
+                                        November 2011
+                                    </p>
+                                </div>
+                                <div class="col-md-8">
+                                    <p>
+                                        Provided support via phone, email and forum, covering large scope of
+                                        technical issues, including installation, performance and connection
+                                        issues of Blizzard games.
+                                    </p>
+                                </div>
+                            </div>
+                </div>
+                <div class="item">
+                        <div class="experience row">
+                                <div class="col-md-4">
+                                    <h4>Quality Control, CS</h4>
+                                    <p class="experience-period">
+                                        February 2009				- 
+                                        August 2009
+                                    </p>
+                                </div>
+                                <div class="col-md-8">
+                                    <p>
+                                        • Provided training for groups of new CS hires.<br />
+                                        • Regularly reviewed services provided by CS agents to identify
+                                        improvement opportunities.<br />
+                                        • Delivered one-to-one and one-to-many trainings on various CS related
+                                        topics to CS agents.<br />
+                                    </p>
+                                </div>
+                            </div>
+                </div>
+                <div class="item">
+                        <div class="experience row">
+                                <div class="col-md-4">
+                                    <h4>Billing and Account Support</h4>
+                                    <p class="experience-period">
+                                        September 2008				- 
+                                        February 2009
+                                    </p>
+                                </div>
+                                <div class="col-md-8">
+                                    <p>
+                                        • Provided one-to-one support to WoW players following its launch in
+                                        Russian language with Wrath of the Lich King expansion.<br />
+                                        • Consistently exceeded KPI by resolving over 130 email or phone requests
+                                        daily and maintaining a high level of customer satisfaction.<br />
+                                    </p>
+                                </div>
+                            </div>
                 </div>
               </div>
           
@@ -291,6 +329,36 @@
             </div>
             <!-- Carousel ends -->
             </div>
+
+            <h3>Educations</h3>
+            
+            <div class="experiences">
+                <div class="experience row">
+                    <div class="col-md-4">
+                        <h4>school PH</h4>
+                        <p class="experience-period">
+                            start date PH				- 
+                            end date PH			</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            <strong>school name PH</strong>
+                            <span class="hidden-phone">
+                            Details PH (not for phones)    
+                            </span>
+                            <span class="experience-details">
+                                <span class="location">
+                                    <span class="glyphicon glyphicon-map-marker"></span>
+                                    Location PH
+                                </span>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
 
         <div class="background-white">
         	<div id="abilities" class="container">
@@ -451,34 +519,34 @@
         
         </div>
         	<div class="background-gray">
-        		<div id="contact" class="container">
+        		<div id="game_of_memory" class="container">
                         <h1>Game of paired images</h1>
                         <p>Find pairs of images to win the game.</p>
                         <button id='restart_button' type='button' class='btn btn-primary btn-lg' name='button'>Restart!</button>
                         <table align="center">
                             <tr>
-                                <td><img class="game_cell_image" id="img_1" src="game_images/empty_green.png" width="100" height="100"></td>
-                                <td><img class="game_cell_image" id="img_2" src="game_images/empty_green.png" width="100" height="100"></td>
-                                <td><img class="game_cell_image" id="img_3" src="game_images/empty_green.png" width="100" height="100"></td>
-                                <td><img class="game_cell_image" id="img_4" src="game_images/empty_green.png" width="100" height="100"></td>
+                                <td><img class="game_cell_image" id="img_1" src="game_images/empty_green.png"></td>
+                                <td><img class="game_cell_image" id="img_2" src="game_images/empty_green.png"></td>
+                                <td><img class="game_cell_image" id="img_3" src="game_images/empty_green.png"></td>
+                                <td><img class="game_cell_image" id="img_4" src="game_images/empty_green.png"></td>
                             </tr>
                             <tr>
-                                <td><img class="game_cell_image" id="img_5" src="game_images/empty_green.png" width="100" height="100"></td>
-                                <td><img class="game_cell_image" id="img_6" src="game_images/empty_green.png" width="100" height="100"></td>
-                                <td><img class="game_cell_image" id="img_7" src="game_images/empty_green.png" width="100" height="100"></td>
-                                <td><img class="game_cell_image" id="img_8" src="game_images/empty_green.png" width="100" height="100"></td>
+                                <td><img class="game_cell_image" id="img_5" src="game_images/empty_green.png"></td>
+                                <td><img class="game_cell_image" id="img_6" src="game_images/empty_green.png"></td>
+                                <td><img class="game_cell_image" id="img_7" src="game_images/empty_green.png"></td>
+                                <td><img class="game_cell_image" id="img_8" src="game_images/empty_green.png"></td>
                             </tr>
                             <tr>
-                                <td><img class="game_cell_image" id="img_9" src="game_images/empty_green.png" width="100" height="100"></td>
-                                <td><img class="game_cell_image" id="img_10" src="game_images/empty_green.png" width="100" height="100"></td>
-                                <td><img class="game_cell_image" id="img_11" src="game_images/empty_green.png" width="100" height="100"></td>
-                                <td><img class="game_cell_image" id="img_12" src="game_images/empty_green.png" width="100" height="100"></td>
+                                <td><img class="game_cell_image" id="img_9" src="game_images/empty_green.png"></td>
+                                <td><img class="game_cell_image" id="img_10" src="game_images/empty_green.png"></td>
+                                <td><img class="game_cell_image" id="img_11" src="game_images/empty_green.png"></td>
+                                <td><img class="game_cell_image" id="img_12" src="game_images/empty_green.png"></td>
                             </tr>
                             <tr>
-                                <td><img class="game_cell_image" id="img_13" src="game_images/empty_green.png" width="100" height="100"></td>
-                                <td><img class="game_cell_image" id="img_14" src="game_images/empty_green.png" width="100" height="100"></td>
-                                <td><img class="game_cell_image" id="img_15" src="game_images/empty_green.png" width="100" height="100"></td>
-                                <td><img class="game_cell_image" id="img_16" src="game_images/empty_green.png" width="100" height="100"></td>
+                                <td><img class="game_cell_image" id="img_13" src="game_images/empty_green.png"></td>
+                                <td><img class="game_cell_image" id="img_14" src="game_images/empty_green.png"></td>
+                                <td><img class="game_cell_image" id="img_15" src="game_images/empty_green.png"></td>
+                                <td><img class="game_cell_image" id="img_16" src="game_images/empty_green.png"></td>
                             </tr>
                         </table>
                         <div id="game_won">
@@ -490,7 +558,13 @@
             <hr />
 
         </div>
-
+        <div class="background-gray">
+        		<div id="contact" class="container">
+                        <a href="https://www.linkedin.com/in/mikhail-ilin-fr/"><img alt="linkedin" src="./profile_images//LI-Logo.png" width="102" height="25"></a>
+                    </br>
+                    <a href="https://github.com/milin-fr"><img alt="github" src="./profile_images//GitHub_Logo.png" width="60" height="25"></a>
+                    </div>
+                </div>      
                 
                 <footer class="container text-center">
                   <a href="#myPage" title="To Top">
