@@ -11,9 +11,11 @@
 		<meta name="keywords" content="Mikhail Ilin, Interactive Resume, Web developer, Startup, Interactive CV, Resume, CV, OOP" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="game_css.css">
+        <link rel="stylesheet" href="./game_css.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="./parallax.min.js"></script>
         <script>
                 $(document).ready(function(){
                   // Add smooth scrolling to all links in navbar + footer link
@@ -42,35 +44,33 @@
                 })
                 </script>
         <style>
-            .jumbotron { 
-                background-image: url("./profile_images/explore.png");
-                background-size: 100%;
-                background-position: center;
-                background-repeat: no-repeat;
-                height: 1024px;
+            .jumbotron {
+                min-height: 1024px;
+                background: transparent;
             }
-            
-            .glyphicon.glyphicon-star.filled {
-                color: #00FF00;
-            }
-            
-            .carousel-control.right, .carousel-control.left {
+            .carousel-control.right{
                 background-image: none;
-                color: #f4511e;
+                color: #0900ff;
+                right: -110px;
+            }
+            .carousel-control.left {
+                background-image: none;
+                color: #0900ff;
+                left: -110px;
             }
             .carousel-indicators li {
-                border-color: #f4511e;
+                border-color: #0900ff;
             }
             .carousel-indicators li.active {
-                background-color: #f4511e;
+                background-color: #0900ff;
             }
             .carousel.slide {
-                height: 290px;
+                min-height: 360px;
             }
 
             .navbar {
                 margin-bottom: 0;
-                background-color: #f4511e;
+                background-color: #0900ff;
                 z-index: 9999;
                 border: 0;
                 font-size: 12px !important;
@@ -82,7 +82,7 @@
                 color: #fff !important;
             }
             .navbar-nav li a:hover, .navbar-nav li.active a {
-                color: #f4511e !important;
+                color: #0900ff !important;
                 background-color: #fff !important;
             }
             .navbar-default .navbar-toggle {
@@ -93,16 +93,23 @@
             .glyphicon.glyphicon-chevron-up {
                   font-size: 20px;
                   margin-bottom: 20px;
-                  color: #f4511e;
+                  color: #0900ff;
                 }
             .container {
                 width: 50%;
+            }
+            .btn{
+                background-color: #0900ff;
+            }
+            .btn-primary:hover{
+                color: #0900ff;
+                background-color: white;
             }
             </style>
         <title>Mikhail Ilin - Software Developer Enthusiast - Online Resume</title>
     </head>
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-        <div id="top" class="jumbotron">
+        <div id="top" class="jumbotron" data-parallax="scroll" data-image-src="./profile_images/explore.png">
                 <nav class="navbar navbar-default navbar-fixed-top">
                         <div class="container">
                           <div class="navbar-header">
@@ -111,15 +118,13 @@
                               <span class="icon-bar"></span>
                               <span class="icon-bar"></span> 
                             </button>
-                            <a class="navbar-brand" href="#">Home</a>
+                            <a class="navbar-brand" href="#myPage">Home</a>
                           </div>
                           <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav navbar-right">
-                              <li><a href="#profile">PROFILE</a></li>
-                              <li><a href="#experiences">EXPERIENCES</a></li>
-                              <li><a href="#abilities">ABILITIES</a></li>
-                              <li><a href="#game_of_memory">WASTE 2 MINUTES</a></li>
-                              <li><a href="#contact">CONTACT</a></li>
+                                 <li><a href="#profile">PROFILE</a></li>
+                                  <li><a href="#experiences">EXPERIENCES</a></li>
+                                  <li><a href="#game_of_memory">WASTE 2 MINUTES</a></li>
                             </ul>
                           </div>
                         </div>
@@ -132,10 +137,12 @@
             
         <div class="background-white">
             <div id="profile" class="container">
+                <br />
+                <br />
                 <div class="row">
-        	        <div class="col-md-4">
+        	        <div class="col-md-8">
         	    	    <h3>About me</h3>
-        	    	    <p>I am a team player with problem solving mind set. I like people, I like to be useful and make people happy, but if I need to make a choise between making someone happy or making someone better, I would choose the second. I like order and I like freedom - for me these can go well together. I like creating, fixing, improving. I'm curious and result oriented, so every experience, every action and every piece of knowledge builds up to something great.</p>
+        	    	    <p>I am a team player with problem solving mind set. I like people, I like to be useful and make people happy, but if I need to make a choice between making someone happy or making someone better, I would choose the second. I like order and I like freedom — for me these can go well together. I like creating, fixing, improving. I'm curious and result oriented, so every experience, every action and every piece of knowledge builds up to something great.</p>
                     </div>
         	        <div class="col-md-4 text-center">
         	    	    <img src="./profile_images//mikhail_ilin_photo_1.png" alt="My photo : )" width="300" height="300" />
@@ -143,9 +150,10 @@
                 </div>
         	</div>	
         </div>	
-        <hr />
+        
         <div id="experiences" class="container">
-                <h2>Experiences</h2>
+                <br />
+                <hr />
                 <p class="lead">
                     &ldquo;Live as if you were to die tomorrow. Learn as if you were to live forever.&rdquo;<br />- Mahatma Gandhi
                 </p>
@@ -169,7 +177,7 @@
                 
             </div>
             <!-- Carousel starts -->
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
               <!-- Indicators -->
               <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -329,240 +337,55 @@
             </div>
             <!-- Carousel ends -->
             </div>
-
-            <h3>Educations</h3>
-            
-            <div class="experiences">
-                <div class="experience row">
-                    <div class="col-md-4">
-                        <h4>school PH</h4>
-                        <p class="experience-period">
-                            start date PH				- 
-                            end date PH			</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p>
-                            <strong>school name PH</strong>
-                            <span class="hidden-phone">
-                            Details PH (not for phones)    
-                            </span>
-                            <span class="experience-details">
-                                <span class="location">
-                                    <span class="glyphicon glyphicon-map-marker"></span>
-                                    Location PH
-                                </span>
-                            </span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-        <div class="background-white">
-        	<div id="abilities" class="container">
-        	    <h2>Abilities</h2>
-                    <p class="lead">
-        	            &ldquo;Something smart.&rdquo;<br />- Someone smart
-                    </p>
-                <hr />
-                
-                <h3>Skills</h3>
-                
-                <div class="row">
-                	<div class="col-md-6">
-                		<ul class="no-bullets">
-                			<li>
-                				<span class="ability-title">Copy-Paste</span>
-                				<span class="ability-score">
-                                
-                					<span class="glyphicon glyphicon-star filled"></span>
-                                
-                					<span class="glyphicon glyphicon-star filled"></span>
-                                
-                					<span class="glyphicon glyphicon-star filled"></span>
-                                
-                					<span class="glyphicon glyphicon-star filled"></span>
-                                
-                					<span class="glyphicon glyphicon-star filled"></span>
-                                
-                				</span>
-                			</li>
-                		</ul>
-                	</div>
-                	<div class="col-md-6">
-                		<ul class="no-bullets">
-                			<li>
-                				<span class="ability-title">Less skilled PH</span>
-                				<span class="ability-score">
-                                
-                					<span class="glyphicon glyphicon-star filled"></span>
-                                
-                					<span class="glyphicon glyphicon-star filled"></span>
-                                
-                					<span class="glyphicon glyphicon-star filled"></span>
-                                
-                					<span class="glyphicon glyphicon-star filled"></span>
-                                
-                					<span class="glyphicon glyphicon-star "></span>
-                				</span>
-                			</li>
-                		</ul>
-                	</div>
-                </div>
-            
-                <div class="text-center project-referal">
-                	<p>This project is greatly inspired by someone else's work.</p>
-                	<a href="https://github.com/pascalvgemert/resume" class="btn btn-primary" target="_blank">See project on Github</a>
-                </div>
-            
-                <hr />
-            
-                <h3>Languages</h3>
-            
-                <div class="row">
-                	<div class="col-md-6">
-                		<ul class="no-bullets">
-                			<li>
-                				<span class="ability-title">Russian (Native)</span>
-                				<span class="ability-score">
-                					<span class="glyphicon glyphicon-star filled"></span>
-                					<span class="glyphicon glyphicon-star filled"></span>
-                					<span class="glyphicon glyphicon-star filled"></span>
-                					<span class="glyphicon glyphicon-star filled"></span>
-                					<span class="glyphicon glyphicon-star filled"></span>
-                				</span>
-                			</li>
-                			<li>
-                				<span class="ability-title">English (Fluent)</span>
-                				<span class="ability-score">
-                					<span class="glyphicon glyphicon-star filled"></span>
-                					<span class="glyphicon glyphicon-star filled"></span>
-                					<span class="glyphicon glyphicon-star filled"></span>
-                					<span class="glyphicon glyphicon-star filled"></span>
-                					<span class="glyphicon glyphicon-star "></span>
-                				</span>
-                			</li>
-                			<li>
-                				<span class="ability-title">French (Fluent)</span>
-                				<span class="ability-score">
-                					<span class="glyphicon glyphicon-star filled"></span>
-                					<span class="glyphicon glyphicon-star filled"></span>
-                                    <span class="glyphicon glyphicon-star filled"></span>
-                                    <span class="glyphicon glyphicon-star filled"></span>
-                					<span class="glyphicon glyphicon-star "></span>
-                				</span>
-                			</li>
-                		</ul>
-                	</div>
-                </div>
-            
-                <hr />
-            
-                <h3>Tools</h3>
-                <div class="row">
-                	<div class="col-md-6">
-                		<ul class="no-bullets">
-                			<li>
-                				<span class="ability-title">Tool PH</span>
-                				<span class="ability-score">
-                					<span class="glyphicon glyphicon-star filled"></span>
-                                    <span class="glyphicon glyphicon-star filled"></span>
-                                    <span class="glyphicon glyphicon-star filled"></span>
-                					<span class="glyphicon glyphicon-star filled"></span>
-                                    <span class="glyphicon glyphicon-star filled"></span>
-                				</span>
-                			</li>
-                		</ul>
-                	</div>
-                	<div class="col-md-6">
-                		<ul class="no-bullets">
-                			<li>
-                				<span class="ability-title">Tool PH column 2</span>
-                				<span class="ability-score">
-                					<span class="glyphicon glyphicon-star filled"></span>
-                                    <span class="glyphicon glyphicon-star filled"></span>
-                                    <span class="glyphicon glyphicon-star filled"></span>
-                					<span class="glyphicon glyphicon-star filled"></span>
-                					<span class="glyphicon glyphicon-star "></span>
-                				</span>
-                			</li>
-                		</ul>
-                	</div>
-                </div>			
-            </div>
-        </div>
-
-        <div id="projects" class="container">
-        	<h2>Projects</h2>
-                <p class="lead">
-        	        &ldquo;Even a pinguin can be a butterfly.&rdquo;<br />- underrated genious
-                </p>
-            <hr />
-            
-            <div class="row">
-        	    <div class="col-md-6 col-sm-12 col-xs-12">
-        	    	<figure class="effect">
-        	    		<figcaption>
-        	    			<h3>Project title PH</h3>
-        	    			<p>Details PH.</p>
-        	    			<p><strong>Tags:</strong> <br />Tag ph, Tag PH, Tag PH</p>
-        	    			<a href="http://LINK_PH.com" target="_blank">View more</a>
-        	    			<span class="icon">
-        	    				<span class="glyphicon glyphicon-new-window"></span>
-        	    			</span>
-        	    		</figcaption> 
-        	    	</figure>
-        	    </div>
-            </div>
-        
-        </div>
         	<div class="background-gray">
         		<div id="game_of_memory" class="container">
-                        <h1>Game of paired images</h1>
+                        <br />
+                        <hr />
+                        <p class="lead">
+                                &ldquo;If you only do what you can do,
+                                you will never be more than you are now. &rdquo;<br />- Master Shifu
+                        </p>
+                        <hr />
                         <p>Find pairs of images to win the game.</p>
                         <button id='restart_button' type='button' class='btn btn-primary btn-lg' name='button'>Restart!</button>
                         <table align="center">
                             <tr>
-                                <td><img class="game_cell_image" id="img_1" src="game_images/empty_green.png"></td>
-                                <td><img class="game_cell_image" id="img_2" src="game_images/empty_green.png"></td>
-                                <td><img class="game_cell_image" id="img_3" src="game_images/empty_green.png"></td>
-                                <td><img class="game_cell_image" id="img_4" src="game_images/empty_green.png"></td>
+                                <td><img class="game_cell_image" id="img_1" src="game_images/empty_blue.png"></td>
+                                <td><img class="game_cell_image" id="img_2" src="game_images/empty_blue.png"></td>
+                                <td><img class="game_cell_image" id="img_3" src="game_images/empty_blue.png"></td>
+                                <td><img class="game_cell_image" id="img_4" src="game_images/empty_blue.png"></td>
                             </tr>
                             <tr>
-                                <td><img class="game_cell_image" id="img_5" src="game_images/empty_green.png"></td>
-                                <td><img class="game_cell_image" id="img_6" src="game_images/empty_green.png"></td>
-                                <td><img class="game_cell_image" id="img_7" src="game_images/empty_green.png"></td>
-                                <td><img class="game_cell_image" id="img_8" src="game_images/empty_green.png"></td>
+                                <td><img class="game_cell_image" id="img_5" src="game_images/empty_blue.png"></td>
+                                <td><img class="game_cell_image" id="img_6" src="game_images/empty_blue.png"></td>
+                                <td><img class="game_cell_image" id="img_7" src="game_images/empty_blue.png"></td>
+                                <td><img class="game_cell_image" id="img_8" src="game_images/empty_blue.png"></td>
                             </tr>
                             <tr>
-                                <td><img class="game_cell_image" id="img_9" src="game_images/empty_green.png"></td>
-                                <td><img class="game_cell_image" id="img_10" src="game_images/empty_green.png"></td>
-                                <td><img class="game_cell_image" id="img_11" src="game_images/empty_green.png"></td>
-                                <td><img class="game_cell_image" id="img_12" src="game_images/empty_green.png"></td>
+                                <td><img class="game_cell_image" id="img_9" src="game_images/empty_blue.png"></td>
+                                <td><img class="game_cell_image" id="img_10" src="game_images/empty_blue.png"></td>
+                                <td><img class="game_cell_image" id="img_11" src="game_images/empty_blue.png"></td>
+                                <td><img class="game_cell_image" id="img_12" src="game_images/empty_blue.png"></td>
                             </tr>
                             <tr>
-                                <td><img class="game_cell_image" id="img_13" src="game_images/empty_green.png"></td>
-                                <td><img class="game_cell_image" id="img_14" src="game_images/empty_green.png"></td>
-                                <td><img class="game_cell_image" id="img_15" src="game_images/empty_green.png"></td>
-                                <td><img class="game_cell_image" id="img_16" src="game_images/empty_green.png"></td>
+                                <td><img class="game_cell_image" id="img_13" src="game_images/empty_blue.png"></td>
+                                <td><img class="game_cell_image" id="img_14" src="game_images/empty_blue.png"></td>
+                                <td><img class="game_cell_image" id="img_15" src="game_images/empty_blue.png"></td>
+                                <td><img class="game_cell_image" id="img_16" src="game_images/empty_blue.png"></td>
                             </tr>
                         </table>
                         <div id="game_won">
                             <h1 style="display: inline">Bravo ! You won the game in </h1><h1 style="display: inline" id="number_of_turns">0</h1><h1 style="display: inline"> turns!</h1>
                         </div>
-                <p class="lead">
-        	        &ldquo;If I had asked people what they wanted, they would have said faster horses. &rdquo;<br />- Henry Ford
-                </p>
             <hr />
-
         </div>
         <div class="background-gray">
         		<div id="contact" class="container">
-                        <a href="https://www.linkedin.com/in/mikhail-ilin-fr/"><img alt="linkedin" src="./profile_images//LI-Logo.png" width="102" height="25"></a>
-                    </br>
-                    <a href="https://github.com/milin-fr"><img alt="github" src="./profile_images//GitHub_Logo.png" width="60" height="25"></a>
+                        <br /><br /><br /><br />
+                    <p>Add me in <a href="https://www.linkedin.com/in/mikhail-ilin-fr/"><img alt="linkedin" src="./profile_images//LI-Logo.png" width="90" height="19"></a>
+                         if you want to say "Hi" and visit my <a href="https://github.com/milin-fr"><img alt="github" src="./profile_images//GitHub_Logo.png" width="60" height="25"></a>
+                          page if you want to grab some code snippets.                   
+                    </p>
                     </div>
                 </div>      
                 
