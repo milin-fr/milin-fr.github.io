@@ -44,29 +44,180 @@
                 })
                 </script>
         <style>
+            .d-none {
+                display: none !important;
+            }
+
+            @media (min-width: 576px) {
+                .container {
+                    width: 100%;
+                }
+                .d-sm-none {
+                    display: none !important;
+                }
+                .d-sm-inline {
+                    display: inline !important;
+                }
+                .d-sm-inline-block {
+                    display: inline-block !important;
+                }
+                .d-sm-block {
+                  display: block !important;
+                }
+                .d-sm-table {
+                  display: table !important;
+                }
+                .d-sm-table-row {
+                  display: table-row !important;
+                }
+                .d-sm-table-cell {
+                  display: table-cell !important;
+                }
+                .d-sm-flex {
+                  display: -webkit-box !important;
+                  display: -ms-flexbox !important;
+                  display: flex !important;
+                }
+                .d-sm-inline-flex {
+                  display: -webkit-inline-box !important;
+                  display: -ms-inline-flexbox !important;
+                  display: inline-flex !important;
+                }
+            }
+            
+            @media (min-width: 768px) {
+                .container {
+                            width: 100%;
+                        }
+                .d-md-none {
+                  display: none !important;
+                }
+                .d-md-inline {
+                  display: inline !important;
+                }
+                .d-md-inline-block {
+                  display: inline-block !important;
+                }
+                .d-md-block {
+                  display: block !important;
+                }
+                .d-md-table {
+                  display: table !important;
+                }
+                .d-md-table-row {
+                  display: table-row !important;
+                }
+                .d-md-table-cell {
+                  display: table-cell !important;
+                }
+                .d-md-flex {
+                  display: -webkit-box !important;
+                  display: -ms-flexbox !important;
+                  display: flex !important;
+                }
+                .d-md-inline-flex {
+                  display: -webkit-inline-box !important;
+                  display: -ms-inline-flexbox !important;
+                  display: inline-flex !important;
+                }
+            }
+            
+            @media (min-width: 992px) {
+                .container {
+                            width: 80%;
+                        }
+                .d-lg-none {
+                  display: none !important;
+                }
+                .d-lg-inline {
+                  display: inline !important;
+                }
+                .d-lg-inline-block {
+                  display: inline-block !important;
+                }
+                .d-lg-block {
+                  display: block !important;
+                }
+                .d-lg-table {
+                  display: table !important;
+                }
+                .d-lg-table-row {
+                  display: table-row !important;
+                }
+                .d-lg-table-cell {
+                  display: table-cell !important;
+                }
+                .d-lg-flex {
+                  display: -webkit-box !important;
+                  display: -ms-flexbox !important;
+                  display: flex !important;
+                }
+                .d-lg-inline-flex {
+                  display: -webkit-inline-box !important;
+                  display: -ms-inline-flexbox !important;
+                  display: inline-flex !important;
+                }
+            }
+            
+            @media (min-width: 1200px) {
+                .container {
+                            width: 60%;
+                        }
+                .d-xl-none {
+                  display: none !important;
+                }
+                .d-xl-inline {
+                  display: inline !important;
+                }
+                .d-xl-inline-block {
+                  display: inline-block !important;
+                }
+                .d-xl-block {
+                  display: block !important;
+                }
+                .d-xl-table {
+                  display: table !important;
+                }
+                .d-xl-table-row {
+                  display: table-row !important;
+                }
+                .d-xl-table-cell {
+                  display: table-cell !important;
+                }
+                .d-xl-flex {
+                  display: -webkit-box !important;
+                  display: -ms-flexbox !important;
+                  display: flex !important;
+                }
+                .d-xl-inline-flex {
+                  display: -webkit-inline-box !important;
+                  display: -ms-inline-flexbox !important;
+                  display: inline-flex !important;
+                }
+            }
             .jumbotron {
                 min-height: 1024px;
                 background: transparent;
-            }
-            .carousel-control.right{
-                background-image: none;
-                color: #0900ff;
-                right: -110px;
-            }
-            .carousel-control.left {
-                background-image: none;
-                color: #0900ff;
-                left: -110px;
-            }
-            .carousel-indicators li {
-                border-color: #0900ff;
-            }
-            .carousel-indicators li.active {
-                background-color: #0900ff;
-            }
-            .carousel.slide {
-                min-height: 360px;
-            }
+                }
+                .carousel-control.right{
+                    background-image: none;
+                    color: #0900ff;
+                    right: -110px;
+                }
+                .carousel-control.left {
+                    background-image: none;
+                    color: #0900ff;
+                    left: -110px;
+                }
+                .carousel-indicators li {
+                    border-color: #0900ff;
+                }
+                .carousel-indicators li.active {
+                    background-color: #0900ff;
+                }
+                .carousel.slide {
+                    min-height: 360px;
+                }
 
             .navbar {
                 margin-bottom: 0;
@@ -95,9 +246,6 @@
                   margin-bottom: 20px;
                   color: #0900ff;
                 }
-            .container {
-                width: 50%;
-            }
             .btn{
                 background-color: #0900ff;
             }
@@ -109,7 +257,7 @@
         <title>Mikhail Ilin - Software Developer Enthusiast - Online Resume</title>
     </head>
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-        <div id="top" class="jumbotron" data-parallax="scroll" data-image-src="./profile_images/explore.png">
+        <div id="top" class="jumbotron" data-parallax="scroll" data-speed="0.0" data-image-src="./profile_images/explore.png">
                 <nav class="navbar navbar-default navbar-fixed-top">
                         <div class="container">
                           <div class="navbar-header">
@@ -142,7 +290,7 @@
                 <div class="row">
         	        <div class="col-md-8">
         	    	    <h3>About me</h3>
-        	    	    <p>I am a team player with problem solving mind set. I like people, I like to be useful and make people happy, but if I need to make a choice between making someone happy or making someone better, I would choose the second. I like order and I like freedom — for me these can go well together. I like creating, fixing, improving. I'm curious and result oriented, so every experience, every action and every piece of knowledge builds up to something great.</p>
+        	    	    <p align="justify">I am a team player with problem solving mind set. I like people, I like to be useful and make people happy, but if I need to make a choice between making someone happy or making someone better, I would choose the second. I like order and I like freedom — for me these can go well together. I like creating, fixing, improving. I'm curious and result oriented, so every experience, every action and every piece of knowledge builds up to something great.</p>
                     </div>
         	        <div class="col-md-4 text-center">
         	    	    <img src="./profile_images//mikhail_ilin_photo_1.png" alt="My photo : )" width="300" height="300" />
@@ -176,7 +324,9 @@
                         <hr />
                 
             </div>
+            <div class="d-none d-md-block">
             <!-- Carousel starts -->
+            
             <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
               <!-- Indicators -->
               <ol class="carousel-indicators">
@@ -218,110 +368,110 @@
                     </div>
                 </div>
                 <div class="item">
-                        <div class="experience row">
-                                <div class="col-md-4">
-                                    <h4>Test Analyst (Temporary Assignment)</h4>
-                                    <p class="experience-period">
-                                        October 2017				- 
-                                        June 2018
-                                    </p>
-                                </div>
-                                <div class="col-md-8">
-                                    <p>
-                                        • Created detailed test plans for several major features of World of
-                                        Warcraft: Battle for Azeroth expansion.<br />
-                                        • Supervised the progress of testing for above features.<br />
-                                        • Created training material for external QA team, that helped us testing
-                                        Battle for Azeroth expansion.<br />
-                                        • Delivered several major parts of above training.<br />
-                                        • Streamlined and documented QA processes for European team.<br />
-                                        • Performed localization tests of Blizzard games, as well as localization
-                                        and functionality test of Blizzard web pages and services.<br />
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="experience row">
+                        <div class="col-md-4">
+                            <h4>Test Analyst (Temporary Assignment)</h4>
+                            <p class="experience-period">
+                                October 2017				- 
+                                June 2018
+                            </p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                • Created detailed test plans for several major features of World of
+                                Warcraft: Battle for Azeroth expansion.<br />
+                                • Supervised the progress of testing for above features.<br />
+                                • Created training material for external QA team, that helped us testing
+                                Battle for Azeroth expansion.<br />
+                                • Delivered several major parts of above training.<br />
+                                • Streamlined and documented QA processes for European team.<br />
+                                • Performed localization tests of Blizzard games, as well as localization
+                                and functionality test of Blizzard web pages and services.<br />
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
-                        <div class="experience row">
-                                <div class="col-md-4">
-                                    <h4>Social Media Manager, CS</h4>
-                                    <p class="experience-period">
-                                        November 2011				- 
-                                        October 2017
-                                    </p>
-                                </div>
-                                <div class="col-md-8">
-                                    <p>
-                                        • Delivered reactive and proactive communication on CS related topics via
-                                        forum, twitter, launcher breaking news and web-site breaking news.<br />
-                                        • Translated hundreds of external support articles from English to Russian
-                                        language.<br />
-                                        • Volunteered for night shifts to be part of strike team during world-wide
-                                        game and expansion launches.<br />
-                                        • Streamlined and documented all processes related to the scope of work of
-                                        my team in Europe.<br />
-                                        • Implemented and documented the Google Analytics Tracking process for
-                                        SC knowledge base and forum posts in European region.<br />
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="experience row">
+                        <div class="col-md-4">
+                            <h4>Social Media Manager, CS</h4>
+                            <p class="experience-period">
+                                November 2011				- 
+                                October 2017
+                            </p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                • Delivered reactive and proactive communication on CS related topics via
+                                forum, twitter, launcher breaking news and web-site breaking news.<br />
+                                • Translated hundreds of external support articles from English to Russian
+                                language.<br />
+                                • Volunteered for night shifts to be part of strike team during world-wide
+                                game and expansion launches.<br />
+                                • Streamlined and documented all processes related to the scope of work of
+                                my team in Europe.<br />
+                                • Implemented and documented the Google Analytics Tracking process for
+                                SC knowledge base and forum posts in European region.<br />
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
-                        <div class="experience row">
-                                <div class="col-md-4">
-                                    <h4>Technical Customer Support</h4>
-                                    <p class="experience-period">
-                                        February 2010				- 
-                                        November 2011
-                                    </p>
-                                </div>
-                                <div class="col-md-8">
-                                    <p>
-                                        Provided support via phone, email and forum, covering large scope of
-                                        technical issues, including installation, performance and connection
-                                        issues of Blizzard games.
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="experience row">
+                        <div class="col-md-4">
+                            <h4>Technical Customer Support</h4>
+                            <p class="experience-period">
+                                February 2010				- 
+                                November 2011
+                            </p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                Provided support via phone, email and forum, covering large scope of
+                                technical issues, including installation, performance and connection
+                                issues of Blizzard games.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
-                        <div class="experience row">
-                                <div class="col-md-4">
-                                    <h4>Quality Control, CS</h4>
-                                    <p class="experience-period">
-                                        February 2009				- 
-                                        August 2009
-                                    </p>
-                                </div>
-                                <div class="col-md-8">
-                                    <p>
-                                        • Provided training for groups of new CS hires.<br />
-                                        • Regularly reviewed services provided by CS agents to identify
-                                        improvement opportunities.<br />
-                                        • Delivered one-to-one and one-to-many trainings on various CS related
-                                        topics to CS agents.<br />
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="experience row">
+                        <div class="col-md-4">
+                            <h4>Quality Control, CS</h4>
+                            <p class="experience-period">
+                                February 2009				- 
+                                August 2009
+                            </p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                • Provided training for groups of new CS hires.<br />
+                                • Regularly reviewed services provided by CS agents to identify
+                                improvement opportunities.<br />
+                                • Delivered one-to-one and one-to-many trainings on various CS related
+                                topics to CS agents.<br />
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
-                        <div class="experience row">
-                                <div class="col-md-4">
-                                    <h4>Billing and Account Support</h4>
-                                    <p class="experience-period">
-                                        September 2008				- 
-                                        February 2009
-                                    </p>
-                                </div>
-                                <div class="col-md-8">
-                                    <p>
-                                        • Provided one-to-one support to WoW players following its launch in
-                                        Russian language with Wrath of the Lich King expansion.<br />
-                                        • Consistently exceeded KPI by resolving over 130 email or phone requests
-                                        daily and maintaining a high level of customer satisfaction.<br />
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="experience row">
+                        <div class="col-md-4">
+                            <h4>Billing and Account Support</h4>
+                            <p class="experience-period">
+                                September 2008				- 
+                                February 2009
+                            </p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                • Provided one-to-one support to WoW players following its launch in
+                                Russian language with Wrath of the Lich King expansion.<br />
+                                • Consistently exceeded KPI by resolving over 130 email or phone requests
+                                daily and maintaining a high level of customer satisfaction.<br />
+                            </p>
+                        </div>
+                    </div>
                 </div>
               </div>
           
@@ -336,6 +486,132 @@
               </a>
             </div>
             <!-- Carousel ends -->
+        </div>
+            <!-- Experience for mobile view -->
+            <div class="d-block d-md-none">
+                    <div class="experience row">
+                        <div class="col-md-4">
+                            <h4>Social Media Manager, CS</h4>
+                            <p class="experience-period">
+                                June 2018				- 
+                                PRESENT
+                            </p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                • Delivered one-to-many communications via forum and twitter,
+                                educating players on self-help options, solutions to common issues and
+                                use of external CS knowledge base.<br />
+                                • Drafted and translated numerous external knowledge base articles,
+                                breaking news, templates and messages.<br />
+                                • Maintained internal documentation up-to-date following the evolution
+                                of processes and tools.<br />
+                                • Developed a desktop app to track productivity of my team and I
+                                in convenient way.<br />
+                                • Developed a desktop app to generate template messages for urgent player facing communication (supporting 8 languages).<br />
+                                • Developed a desktop app based on existing API to suggest support articles depending on players issue description (supporting 8 languages).<br />
+                                • Developed a desktop app based on JIRA API to extract information from thousands JIRA issues and compile it to Excel file in ordered way.<br />
+                            </p>
+                        </div>
+                    </div>
+                        <div class="experience row">
+                            <div class="col-md-4">
+                                <h4>Test Analyst (Temporary Assignment)</h4>
+                                <p class="experience-period">
+                                    October 2017				- 
+                                    June 2018
+                                </p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>
+                                    • Created detailed test plans for several major features of World of
+                                    Warcraft: Battle for Azeroth expansion.<br />
+                                    • Supervised the progress of testing for above features.<br />
+                                    • Created training material for external QA team, that helped us testing
+                                    Battle for Azeroth expansion.<br />
+                                    • Delivered several major parts of above training.<br />
+                                    • Streamlined and documented QA processes for European team.<br />
+                                    • Performed localization tests of Blizzard games, as well as localization
+                                    and functionality test of Blizzard web pages and services.<br />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience row">
+                            <div class="col-md-4">
+                                <h4>Social Media Manager, CS</h4>
+                                <p class="experience-period">
+                                    November 2011				- 
+                                    October 2017
+                                </p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>
+                                    • Delivered reactive and proactive communication on CS related topics via
+                                    forum, twitter, launcher breaking news and web-site breaking news.<br />
+                                    • Translated hundreds of external support articles from English to Russian
+                                    language.<br />
+                                    • Volunteered for night shifts to be part of strike team during world-wide
+                                    game and expansion launches.<br />
+                                    • Streamlined and documented all processes related to the scope of work of
+                                    my team in Europe.<br />
+                                    • Implemented and documented the Google Analytics Tracking process for
+                                    SC knowledge base and forum posts in European region.<br />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience row">
+                            <div class="col-md-4">
+                                <h4>Technical Customer Support</h4>
+                                <p class="experience-period">
+                                    February 2010				- 
+                                    November 2011
+                                </p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>
+                                    Provided support via phone, email and forum, covering large scope of
+                                    technical issues, including installation, performance and connection
+                                    issues of Blizzard games.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience row">
+                            <div class="col-md-4">
+                                <h4>Quality Control, CS</h4>
+                                <p class="experience-period">
+                                    February 2009				- 
+                                    August 2009
+                                </p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>
+                                    • Provided training for groups of new CS hires.<br />
+                                    • Regularly reviewed services provided by CS agents to identify
+                                    improvement opportunities.<br />
+                                    • Delivered one-to-one and one-to-many trainings on various CS related
+                                    topics to CS agents.<br />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience row">
+                            <div class="col-md-4">
+                                <h4>Billing and Account Support</h4>
+                                <p class="experience-period">
+                                    September 2008				- 
+                                    February 2009
+                                </p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>
+                                    • Provided one-to-one support to WoW players following its launch in
+                                    Russian language with Wrath of the Lich King expansion.<br />
+                                    • Consistently exceeded KPI by resolving over 130 email or phone requests
+                                    daily and maintaining a high level of customer satisfaction.<br />
+                                </p>
+                            </div>
+                        </div>
+            </div>
+            <!-- Experience for mobile view ends -->
             </div>
         	<div class="background-gray">
         		<div id="game_of_memory" class="container">
@@ -347,7 +623,6 @@
                         </p>
                         <hr />
                         <p>Find pairs of images to win the game.</p>
-                        <button id='restart_button' type='button' class='btn btn-primary btn-lg' name='button'>Restart!</button>
                         <table align="center">
                             <tr>
                                 <td><img class="game_cell_image" id="img_1" src="game_images/empty_blue.png"></td>
@@ -376,6 +651,10 @@
                         </table>
                         <div id="game_won">
                             <h1 style="display: inline">Bravo ! You won the game in </h1><h1 style="display: inline" id="number_of_turns">0</h1><h1 style="display: inline"> turns!</h1>
+                        </div>
+                        <br />
+                        <div align="center">
+                            <button id='restart_button' type='button' class='btn btn-primary btn-lg' name='button'>Restart!</button>
                         </div>
             <hr />
         </div>
