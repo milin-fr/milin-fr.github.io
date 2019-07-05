@@ -19,7 +19,7 @@ function clear_board() {
     get_image_per_cell_dictionary();
     display_game_won();
     for (var i = 0; i < all_cells.length; i++) {
-        all_cells[i].src = "./game_images/empty_blue.png"
+        all_cells[i].src = "./game_images/empty_cell.png"
     }
 }
 
@@ -71,8 +71,8 @@ function check_winning_conditions() {
 function close_not_matching_cells() {
     if(current_turn > 2){
         if(!(guessed_cells.includes(current_cell_pair[0]))){
-            current_cell_pair[0].src = "./game_images/empty_blue.png";
-            current_cell_pair[1].src = "./game_images/empty_blue.png";
+            current_cell_pair[0].src = "./game_images/empty_cell.png";
+            current_cell_pair[1].src = "./game_images/empty_cell.png";
         }
     }
 }
@@ -88,7 +88,7 @@ function check_for_match() {
 
 function cell_clicked() {
     console.log("lol test");
-    if (this.src.includes("game_images/empty_blue.png")) {
+    if (this.src.includes("game_images/empty_cell.png")) {
 
         if(current_turn%2 == 1){
             close_not_matching_cells();
