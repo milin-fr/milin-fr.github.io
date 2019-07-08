@@ -1,3 +1,39 @@
+.jumbotron .scroll-down {
+    height: 40px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    background-color: darkgray;
+    text-align: center;
+    z-index: 2;
+}
+
+.jumbotron .scroll-down .glyphicon {
+    color: #FFFFFF;
+    font-size: 30px;
+    padding-top: 5px;
+    animation-name: wiggle;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes wiggle {
+	0% {
+		padding-top: 5px;
+	}
+
+	50% {
+		padding-top: 13px;
+	}
+
+	100% {
+		padding-top: 5px;
+	}
+}
+
 body {
     background-color: #FFFAF0;
 }
