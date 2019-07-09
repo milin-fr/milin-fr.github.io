@@ -41,9 +41,6 @@ function get_eight_random_couples_of_images(){
     shuffle(images);
     delete_images_after_eight();
     var eight_couples_of_images = images.concat(images);
-    for (var i = 0; i < 16; i++) {
-        console.log(i + " " + eight_couples_of_images[i]);
-        }
     shuffle(eight_couples_of_images);
     eight_random_couples_of_images = eight_couples_of_images;
 
@@ -51,7 +48,6 @@ function get_eight_random_couples_of_images(){
 
 function get_image_per_cell_dictionary(){
     for (var i = 0; i < all_cells.length; i++) {
-        console.log(eight_random_couples_of_images[i]);
         image_per_cell_dictionary[all_cells[i].id] = eight_random_couples_of_images[i];
     }
 }
