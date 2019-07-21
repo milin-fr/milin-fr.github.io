@@ -735,12 +735,14 @@
                     <hr />
                 </div>
         		<div align="center" id="contact" class="container">
-                        <br /><br /><br /><br />
-                    <p>Add me in <a href="https://www.linkedin.com/in/mikhail-ilin-fr/" target="_blank"><img alt="linkedin" src="./profile_images//LI-Logo.png" width="90" height="19"></a>
-                         if you want to say "Hi" and visit my <a href="https://github.com/milin-fr" target="_blank"><img alt="github" src="./profile_images//GitHub_Logo.png" width="60" height="25"></a>
-                          page if you want to grab some code snippets.                   
+                    <br /><br /><br /><br />
+                    <p>Add me in <a href="https://www.linkedin.com/in/mikhail-ilin-fr/" target="_blank">
+                    <img alt="linkedin" src="./profile_images//LI-Logo.png" width="90" height="19"></a>
+                    if you want to say "Hi" and visit my <a href="https://github.com/milin-fr" target="_blank">
+                    <img alt="github" src="./profile_images//GitHub_Logo.png" width="60" height="25"></a>
+                     page if you want to grab some code snippets.                   
                     </p>
-                    </div>
+                </div>
                 
                 <footer class="container text-center">
                   <a href="#myPage" title="To Top">
