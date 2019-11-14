@@ -11,11 +11,12 @@
 		<meta name="keywords" content="Mikhail Ilin, Interactive Resume, Web developer, Startup, Interactive CV, Resume, CV, OOP" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../my_custom_css.css">
+        <link rel="stylesheet" href="./css/my_custom_css.css">
+        <link rel="stylesheet" href="./css/style.css">
         <title>Mikhail Ilin - Software Developer Enthusiast - Online Resume</title>
     </head>
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-        <div id="top" class="jumbotron" data-parallax="scroll" data-speed="0.0" data-image-src="./profile_images/explore.png">
+        <div id="top" class="jumbotron" data-parallax="scroll" data-speed="0.0" data-image-src="./img/profile_img/explore.png">
                 <nav class="navbar navbar-default navbar-fixed-top">
                         <div class="container">
                           <div class="navbar-header">
@@ -63,7 +64,7 @@
                     </div>
                 </div>
     	        <div class="col-md-4">
-    	    	    <img src="./profile_images//mikhail_ilin_photo_1.png" alt="My photo : )" width="300" height="300" />
+    	    	    <img src="./img/profile_img/mikhail_ilin_photo_1.png" alt="My photo : )" width="300" height="300" />
                 </div>
             </div>
             <hr />
@@ -87,7 +88,7 @@
             <div class="col-md-3">
                 <span>
                     <a href="https://github.com/milin-fr/" target="_blank">
-                    <img src="./profile_images/GitHub-Mark-32px.png" alt="GitHub" />
+                    <img src="./img/profile_img/GitHub-Mark-32px.png" alt="GitHub" />
                     github.com/milin-fr
                     </a>
                 </span>
@@ -95,7 +96,7 @@
             <div class="col-md-3">
                 <span>
                     <a href="https://www.linkedin.com/in/mikhail-ilin-fr/" target="_blank">
-                    <img src="./profile_images/In-Blue-26.png" alt="linkedin" />
+                    <img src="./img/profile_img/In-Blue-26.png" alt="linkedin" />
                     in/mikhail-ilin-fr
                     </a>
                 </span>
@@ -686,55 +687,20 @@
                 </div>
             </div>
         	<div id="game_of_memory" class="container">
-                <br />
-                <hr />
-                <p align="center">
-                    <span class="words_of_wisdom">You miss 100% of the shots you don’t take.</span><br />- Wayne Gretzky
-                </p>
-                <hr />
-                <h3>Have a 2 minutes break and play my game.</h3>
-                <p>Find pairs of images to win the game.</p>
-                <table align="center">
-                    <tr>
-                        <td><img class="game_cell_image" id="img_1" src=""></td>
-                        <td><img class="game_cell_image" id="img_2" src=""></td>
-                        <td><img class="game_cell_image" id="img_3" src=""></td>
-                        <td><img class="game_cell_image" id="img_4" src=""></td>
-                    </tr>
-                    <tr>
-                        <td><img class="game_cell_image" id="img_5" src=""></td>
-                        <td><img class="game_cell_image" id="img_6" src=""></td>
-                        <td><img class="game_cell_image" id="img_7" src=""></td>
-                        <td><img class="game_cell_image" id="img_8" src=""></td>
-                    </tr>
-                    <tr>
-                        <td><img class="game_cell_image" id="img_9" src=""></td>
-                        <td><img class="game_cell_image" id="img_10" src=""></td>
-                        <td><img class="game_cell_image" id="img_11" src=""></td>
-                        <td><img class="game_cell_image" id="img_12" src=""></td>
-                    </tr>
-                    <tr>
-                        <td><img class="game_cell_image" id="img_13" src=""></td>
-                        <td><img class="game_cell_image" id="img_14" src=""></td>
-                        <td><img class="game_cell_image" id="img_15" src=""></td>
-                        <td><img class="game_cell_image" id="img_16" src=""></td>
-                    </tr>
-                </table>
-                <div align="center" id="game_won">
-                    <h1 style="display: inline">Bravo! You won the game in </h1><h1 style="display: inline" id="number_of_turns">0</h1><h1 style="display: inline"> clicks!</h1>
-                </div>
-                <br />
-                <div align="center">
-                    <button id='restart_button' type='button' class='btn btn-outline-secondary' name='button'>Restart!</button>
-                </div>
-                <hr />
+               <article>Play a game of memory. Select the field size and flip images to discover two matching!</article>
+               <button id="4x4">Discovery (4x4)</button>
+               <button id="6x6">Easy (6x6)</button>
+               <button id="8x8">Challanging (8x8)</button>
+               <button id="10x10">Hard (10x10)</button>
+               <button id="20x20">Impossible (20x20)</button>
+               <div id="game_container"></div>
             </div>
         	<div align="center" id="contact" class="container">
                 <br /><br /><br /><br />
                 <p>Add me on <a href="https://www.linkedin.com/in/mikhail-ilin-fr/" target="_blank">
-                <img alt="linkedin" src="./profile_images//LI-Logo.png" width="90" height="19"></a>
+                <img alt="linkedin" src="./img/profile_img/LI-Logo.png" width="90" height="19"></a>
                 if you want to say "Hi" and visit my <a href="https://github.com/milin-fr" target="_blank">
-                <img alt="github" src="./profile_images//GitHub_Logo.png" width="60" height="25"></a>
+                <img alt="github" src="./img/profile_img/GitHub_Logo.png" width="60" height="25"></a>
                  page if you want to grab some code snippets.                   
                 </p>
             </div>
@@ -745,9 +711,9 @@
           <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools" target="_blank">www.w3schools.com</a></p> 
         </footer> 
     </body>
-    <script src="game_script.js"></script>
+    <script src="./scripts/game_script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="./parallax.min.js"></script>
-    <script src="./navbar_script.js"></script>
+    <script src="./scripts/parallax.min.js"></script>
+    <script src="./scripts/navbar_script.js"></script>
 </html>
